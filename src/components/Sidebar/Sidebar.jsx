@@ -1,22 +1,53 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect, useContext} from 'react';
 import useStyles from './style';
 
 
-const Sidebar = () => {
+
+
+const Sidebar = props => {
   const classes = useStyles();
+  const [tag, setTag] = useState("Tout");
+  const [filterImg, setFilterImg] = useState([]);
 
-  const [name, setName] = useState([]);
+  useEffect(() => {
+    if(tag === "tout") {
+      setFilterImg(props.data);
+    } else {
+      setFilterImg(props.data.filter(image => image.tags === tag))
+    }
+  }, [tag]);
+  // permet de gardée une seule occurence de tag par collection.
+  const nameOfTag = Array.from(new Set(props.data.map((i) => i.tags)));
 
-  
+  console.log(tag)
+
   return (
-    <nav className={classes.sidebar}>
-      <ul>
-        <li><a href="">aaaa</a></li>
-        <li><a href="">bbbb</a></li>
-        <li><a href="">cccc</a></li>
-      </ul>
-    </nav>
+    <div className={classes.sidebar}>
+      <span className={classes.subtitle}>Mes oeuvres par :</span>
+      <TagButton onClick={() => setTag(name)}/>
+      {
+        nameOfTag.map((v, k) => (
+          !!v.trim() ? <TagButton onClick={() => setTag(name)} key={k} name={v} /> : null
+          ))
+
+        }
+    </div>
   );
 }
+
+
+const TagButton = ({name}) => {
+  const classes = useStyles();
+
+
+  return (
+        <button 
+          
+          className={classes.alink}>
+          {name || "Tout"}
+        </button>
+  )
+}
+
 
 export default Sidebar;

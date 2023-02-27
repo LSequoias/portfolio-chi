@@ -57,6 +57,7 @@ const useStyles = createUseStyles({
     },
     contentMedia: {
         height: '480px',
+        width: '480px',
         margin: 0,
         padding:0,
         border: '1px solid #9c4545',
@@ -67,12 +68,14 @@ const useStyles = createUseStyles({
         height: '100%',
         objectFit: 'cover',
     },
-    // =1 media
-    '@media screen and (max-width:1280px)' : {
-        contentMedia : {
-            height: '480px',
-        }
+    exposition: {
+        display: 'flex',
+        margin: '.5rem 0',
+        justifyContent: 'space-between',
+        width: '100%',
     },
+    // =1 media
+
     '@media screen and (max-width: 992px)' : {
         paragraph: {
             fontSize: '1.5rem',
@@ -87,6 +90,7 @@ const useStyles = createUseStyles({
         },
         contentMedia: {
             height: '70%',
+            width: '100%',
         }
     },
 

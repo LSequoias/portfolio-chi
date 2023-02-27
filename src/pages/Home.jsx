@@ -25,7 +25,7 @@ const Home = () => {
                     </div>
 
                     <figure className={classes.contentMedia}>
-                        <img className={classes.image} src="media/images/04.png" alt="image de présentation" />
+                        <img className={classes.image} src="media/images/05.jpg" alt="image de présentation" />
                     </figure>
                 </article>
             </section>

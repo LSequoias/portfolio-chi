@@ -2,137 +2,83 @@
 
 const expositionData = [
     {
-        title : "première card",
-        media : "/media/images/japo.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
+        title : "maison traditionnel japon",
+        url : "/media/images/japo.jpg",
+        hoverText : "Cliquez sur image",
+        textAlter : "maison traditionnel japon",
+        description : [
+            {
+                subtitle: "exposition du japon",
+                paragraph: "blablabla.."
+            }
+        ],
+        tags : "japon nocturne"
     },
     {
-        title : "second card",
-        media : "/media/images/tengu.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
-    },
-    {
-        title : "troisième card",
-        media : "/media/images/tengu.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
-    },
-    {
-        title : "première card",
-        media : "/media/images/01.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
-    },
-    {
-        title : "second card",
-        media : "/media/images/02.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
-    },
-    {
-        title : "troisième card",
-        media : "/media/images/03.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
+        title : "japon du futur",
+        url : "/media/images/01.jpg",
+        hoverText : "Cliquez sur image",
+        textAlter : "japon du futur",
+        description : [
+            {
+                subtitle: "voici comment j'imagine le japon !",
+                paragraph: "blablabla.."
+            }
+        ],
+        tags : "abstrait"
     },
     {
         title : "première card",
-        media : "/media/images/04.png",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
-    },
-    {
-        title : "second card",
-        media : "/media/images/tengu.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
-    },
-    {
-        title : "troisième card",
-        media : "/media/images/05.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
+        url : "/media/images/02.jpg",
+        hoverText : "Cliquez sur image",
+        textAlter : "maison traditionnel japon",
+        description : [
+            {
+                subtitle: "exposition du japon",
+                paragraph: "blablabla.."
+            }
+        ],
+        tags : "japon nocturne"
     },
     {
         title : "première card",
-        media : "/media/images/06.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
+        url : "/media/images/03.jpg",
+        hoverText : "Cliquez sur image",
+        textAlter : "maison traditionnel japon",
+        description : [
+            {
+                subtitle: "exposition du japon",
+                paragraph: "blablabla.."
+            }
+        ],
+        tags : "monochrome"
     },
     {
-        title : "second card",
-        media : "/media/images/07.jpeg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
+        title : "Art moderne",
+        url : "/media/images/08.jpg",
+        hoverText : "Cliquez sur image",
+        textAlter : "art moderne",
+        description : [
+            {
+                subtitle: "exposition d'art moderne",
+                paragraph: "blablabla.."
+            }
+        ],
+        tags : "art moderne"
     },
     {
-        title : "première card",
-        media : "/media/images/japo.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
+        title : "Bansky",
+        url : "/media/images/09.jpg",
+        hoverText : "Cliquez sur image",
+        textAlter : "Bansky",
+        description : [
+            {
+                subtitle: "exposition de Bansky",
+                paragraph: "blablabla.."
+            }
+        ],
+        tags : "Bansky"
     },
-    {
-        title : "second card",
-        media : "/media/images/tengu.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
-    },
-    {
-        title : "troisième card",
-        media : "/media/images/tengu.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
-    },
-    {
-        title : "première card",
-        media : "/media/images/01.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
-    },
-    {
-        title : "second card",
-        media : "/media/images/02.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
-    },
-    {
-        title : "troisième card",
-        media : "/media/images/03.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
-    },
-    {
-        title : "première card",
-        media : "/media/images/04.png",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
-    },
-    {
-        title : "second card",
-        media : "/media/images/tengu.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
-    },
-    {
-        title : "troisième card",
-        media : "/media/images/05.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
-    },
-    {
-        title : "première card",
-        media : "/media/images/06.jpg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
-    },
-    {
-        title : "second card",
-        media : "/media/images/07.jpeg",
-        mediaTxt : "nom de la représentation",
-        description: "lorem10"
-    }
 ];
 
 export default expositionData;
