@@ -1,33 +1,20 @@
-import {useState, useEffect, useContext} from 'react';
 import useStyles from './style';
 
 
-
-
-const Sidebar = props => {
+const Sidebar = ({data, handleFilter, name}) => {
   const classes = useStyles();
-  const [tag, setTag] = useState("Tout");
-  const [filterImg, setFilterImg] = useState([]);
 
-  useEffect(() => {
-    if(tag === "tout") {
-      setFilterImg(props.data);
-    } else {
-      setFilterImg(props.data.filter(image => image.tags === tag))
-    }
-  }, [tag]);
   // permet de gardée une seule occurence de tag par collection.
-  const nameOfTag = Array.from(new Set(props.data.map((i) => i.tags)));
+  const nameOfTag = Array.from(new Set(data.map((i) => i.tags)));
 
-  console.log(tag)
 
   return (
     <div className={classes.sidebar}>
       <span className={classes.subtitle}>Mes oeuvres par :</span>
-      <TagButton onClick={() => setTag(name)}/>
+      <TagButton name={name} data={data} handleFilter={handleFilter} />
       {
         nameOfTag.map((v, k) => (
-          !!v.trim() ? <TagButton onClick={() => setTag(name)} key={k} name={v} /> : null
+          !!v.trim() ? <TagButton key={k} name={v} data={data} handleFilter={handleFilter} /> : null
           ))
 
         }
@@ -36,16 +23,21 @@ const Sidebar = props => {
 }
 
 
-const TagButton = ({name}) => {
+const TagButton = ({name, data, handleFilter}) => {
   const classes = useStyles();
 
+    const getData = data.filter((image)=> {
+      if(image.tags === name) {
+        return data;
+      }
+    });
 
   return (
-        <button 
-          
-          className={classes.alink}>
-          {name || "Tout"}
-        </button>
+    <button
+      onClick={() => handleFilter(getData, name)}
+      className={classes.alink}>
+      {name || "Tout"}
+    </button>
   )
 }
 

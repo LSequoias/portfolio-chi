@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import Layouts from "../layouts/Layouts";
 
 // components
@@ -11,19 +11,29 @@ import expositionData from './../params/expositionData';
 import useStyles from "./style";
 
 
-const Exposition = () => {
+const Exposition = ({name}) => {
     const classes = useStyles();
+
+    const [filterImg, setFilterImg] = useState(expositionData);
+
+      function handleFilter(setData, name) {
+        if(name === undefined) {
+          setFilterImg(expositionData)
+        } else {
+          setFilterImg(setData)
+        }
+      }
 
     return (
         <Layouts>
             <section className={classes.exposition}>
-                <Sidebar data={expositionData}/>
+                <Sidebar data={expositionData} handleFilter={handleFilter} name={name}/>
                 <Suspense fallback={
                     <div>
                         en attente
                     </div>
                     }>
-                    <Gallery data={expositionData} />
+                    <Gallery data={filterImg} />
                 </Suspense>
             </section>
         </Layouts>

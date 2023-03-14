@@ -1,13 +1,11 @@
-
+import React, {useState} from "react";
 
 import useStyles from "./style";
 
-const Gallery = props => {
+const Gallery = ({data}) => {
     const classes = useStyles();
-
     
     return (
-        
         <div className={classes.gallery}>
             <div className={classes.wrap}>
                 {/* Modal */}
@@ -15,7 +13,7 @@ const Gallery = props => {
                 {/* end moda */}
 
                 {
-                    props.data.map((image, k) => (
+                    data.map((image, k) => (
                     <div className={classes.box} key={k}>
                         <figure className={classes.noMarge}>
                             <img
