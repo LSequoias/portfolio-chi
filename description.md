@@ -2,7 +2,7 @@
 en cours
 
 ## Description:  
-Portfolio avec React, React router dom et Framer motions. Composée de 4 pages,  
+Portfolio avec React, React router dom et Framer motions. Composée de 5 pages,  
 
 > La première page constitue le Home, c'est l'espace de présentation de la personne incluant sa photo ainsi qu'une bref description.  
   
