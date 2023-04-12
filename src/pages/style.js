@@ -2,6 +2,11 @@ import { createUseStyles } from "react-jss";
 
 
 const useStyles = createUseStyles({
+    tmpPic : {
+        width: "25%",
+        height: "25%",
+        objectFit: "cover",
+    },
     presentation: {
         display:'flex',
         flexDirection: 'column',

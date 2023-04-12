@@ -12,7 +12,7 @@ const expositionData = [
                 paragraph: "blablabla.."
             }
         ],
-        tags : "japon nocturne"
+        tags : "Japon"
     },
     {
         title : "japon du futur",
@@ -25,33 +25,33 @@ const expositionData = [
                 paragraph: "blablabla.."
             }
         ],
-        tags : "abstrait"
+        tags : "Abstrait"
     },
     {
-        title : "première card",
+        title : "Tokyo de Freepik",
         url : "/media/images/02.jpg",
         hoverText : "Cliquez sur image",
-        textAlter : "maison traditionnel japon",
+        textAlter : "Tokyo illustration, Japon",
         description : [
             {
-                subtitle: "exposition du japon",
-                paragraph: "blablabla.."
+                subtitle: "Tokyo de chez Freepik..",
+                paragraph: "blablabla Freepik pas bien.."
             }
         ],
-        tags : "japon nocturne"
+        tags : "Japon"
     },
     {
-        title : "première card",
+        title : "Mont Fuji Hama",
         url : "/media/images/03.jpg",
         hoverText : "Cliquez sur image",
-        textAlter : "maison traditionnel japon",
+        textAlter : "Mont Fuji Hama, Japon",
         description : [
             {
-                subtitle: "exposition du japon",
-                paragraph: "blablabla.."
+                subtitle: "Le Mont Fuji Hama !!",
+                paragraph: "blablabla japon.."
             }
         ],
-        tags : "monochrome"
+        tags : "Japon"
     },
     {
         title : "Art moderne",
@@ -61,23 +61,49 @@ const expositionData = [
         description : [
             {
                 subtitle: "exposition d'art moderne",
-                paragraph: "blablabla.."
+                paragraph: "blablabla art moderne.."
             }
         ],
-        tags : "art moderne"
+        tags : "Art moderne"
     },
     {
         title : "Bansky",
         url : "/media/images/09.jpg",
         hoverText : "Cliquez sur image",
-        textAlter : "Bansky",
+        textAlter : "",
         description : [
             {
                 subtitle: "exposition de Bansky",
-                paragraph: "blablabla.."
+                paragraph: "blablabla Bansky Bristol.."
             }
         ],
-        tags : "Bansky"
+        tags : ""
+    },
+    {
+        title : "Chat dans le Cosmo",
+        url : "./media/images/cat.jpg",
+        hoverText : "Cliquez sur image",
+        textAlter : "Chat Cosmo",
+        description : [
+            {
+                subtitle: "un chat dans le cosmo",
+                paragraph: "lorem10.. ha bah non"
+            }
+        ],
+        tags : "Chat"
+    },
+    {
+        title : "",
+        url : "/media/images/cats.jpg",
+        hoverText : "",
+        textAlter : "",
+        description : [
+            {
+                subtitle: "Bande de chat",
+                paragraph: "lorem0,5.. Non plus"
+            }
+        ],
+        tags : "Chat"
     },
 ];
 

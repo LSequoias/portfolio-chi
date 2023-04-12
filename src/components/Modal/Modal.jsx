@@ -1,9 +1,8 @@
 import useStyles from "./style";
 
-
-
-const Modal = ({currentImage, setCurrentImage}) => {
+const Modal = (modalData) => {
     const classes = useStyles();
+    //console.log({modal})
 
     const handleClose = e => {
         if(e.target.classList.contains('closeModal')) {
@@ -15,9 +14,8 @@ const Modal = ({currentImage, setCurrentImage}) => {
         <div className={classes.modal}>
             <span className={classes.closeModal} onClick={handleClose}>x</span>
             <div className={classes.contentModal}>
-                <img src={currentImage} />
                 <p className={classes.paragraph}>
-                    
+                    {modalData.paragraph}
                 </p>
             </div>
         </div>

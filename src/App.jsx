@@ -2,6 +2,7 @@
 // Animation 
 import {AnimatePresence} from 'framer-motion';
 
+import Tmp from './pages/Tmp';
 
 // router
 import {Routes, Route} from 'react-router-dom';
@@ -22,6 +23,7 @@ const App = () => {
             <Route path='/' element={<Home/>}/>
             <Route path='/exposition' element={<Exposition/>}/>
             <Route path='/me-contactez' element={<Contact/>}/>
+            <Route path='/tmp' element={<Tmp/>}/>
             <Route path='*' element={<NotFound/>}/>
         </Routes>
       </AnimatePresence>
