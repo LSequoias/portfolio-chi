@@ -10,14 +10,15 @@ const Sidebar = ({data, handleFilter, name}) => {
 
   return (
     <div className={classes.sidebar}>
-      <span className={classes.subtitle}>Mes oeuvres par :</span>
-      <TagButton name={name} data={data} handleFilter={handleFilter} />
-      {
-        nameOfTag.map((v, k) => (
-          !!v.trim() ? <TagButton key={k} name={v} data={data} handleFilter={handleFilter} /> : null
-          ))
-
+      <span className={classes.subtitle}>Toutes mes illustrations</span>
+      <div className={classes.contentTag}>
+        <TagButton name={name} data={data} handleFilter={handleFilter} />
+        {
+          nameOfTag.map((v, k) => (
+            !!v.trim() ? <TagButton key={k} name={v} data={data} handleFilter={handleFilter} /> : null
+          ))  
         }
+        </div>
     </div>
   );
 }
