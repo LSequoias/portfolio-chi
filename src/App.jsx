@@ -8,7 +8,7 @@ import {Routes, Route} from 'react-router-dom';
 // pages 
 import Home from './pages/Home';
 import Exposition from './pages/Exposition';
-import workflow from './pages/Workflow';
+import Workflow from './pages/Workflow';
 import Contact from './pages/Contact';
 import CGU from './pages/CGU';
 import WebSite from './pages/WebSite';
