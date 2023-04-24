@@ -1,14 +1,5 @@
 
 
-export const animation1 = {
-    in: {
-        opacity: 1
-    },
-    out: {
-        opacity: 0
-    }
-}
-
 
 export const animation2 = {
     duration: .3,

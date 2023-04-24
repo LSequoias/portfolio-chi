@@ -1,8 +1,13 @@
-const lists = [
+export const listsOfHeader = [
     {alink:"/", tag:"Biography"},
     {alink:"/exposition", tag:"Exposition"},
+    {alink:"/workflow", tag:"Workflow"},
     {alink:"/me-contactez", tag:"Contact"},
-    {alink: "/tmp", tag:"Espace temporaire"}
 ];
 
-export default lists;
+//export default lists;
+
+export const listsOfFooter = [
+    {alink: "/plan-du-site", tag: "Plan du site"},
+    {alink: "/conditions-general-utilisation", tag: "CGU"}
+];

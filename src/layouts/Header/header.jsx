@@ -1,6 +1,7 @@
 import Navigation from '../../components/Navigation/Navigation';
-import lists from '../../params/navigationData';
+import {listsOfHeader} from '../../params/navigationData';
 import useStyles from './style';
+
 
 const Header = () => {
     const classes = useStyles();
@@ -10,7 +11,7 @@ const Header = () => {
             <figure className={classes.noMarge}>
                 <img className={classes.contentIcon} src="media/icon/logo.png" alt="logo" />
             </figure>
-            <Navigation data={lists}/>
+            <Navigation data={listsOfHeader}/>
         </header>
     )
 }

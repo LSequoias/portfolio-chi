@@ -1,7 +1,8 @@
 
 import Header from './Header/header';
+import Footer from './Footer/Footer';
 import {motion} from 'framer-motion';
-import {animation1, animation2, animationX} from './../services/initialAnimation';
+import {animation2, animationX} from './../services/initialAnimation';
 
 import useStyles from './style';
 
@@ -13,6 +14,7 @@ const Layouts = ({children}) => {
             <main className={classes.main}>
                 {children}
             </main>
+            <Footer />
         </motion.div>
     )
 }

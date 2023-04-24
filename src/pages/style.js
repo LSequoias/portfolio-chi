@@ -92,6 +92,8 @@ const useStyles = createUseStyles({
         contentDescription: {
             width: '100%',
             margin: '4rem auto',
+            boxShadow: 'inset 0 0 3px #404040',
+            backgroundColor: '#2b2b2b17',
         },
         contentMedia: {
             height: '70%',
