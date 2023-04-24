@@ -10,10 +10,9 @@ import Home from './pages/Home';
 import Exposition from './pages/Exposition';
 import Workflow from './pages/Workflow';
 import Contact from './pages/Contact';
-import CGU from './pages/CGU';
 import WebSite from './pages/WebSite';
+import CGU from './pages/CGU';
 import NotFound from './pages/NotFound';
-import Workflow from './pages/Workflow';
 
 
 const App = () => {
