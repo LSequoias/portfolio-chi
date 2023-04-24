@@ -2,6 +2,48 @@ import { createUseStyles } from "react-jss";
 
 
 const useStyles = createUseStyles({
+    typography: {
+        fontFamily : 'Verdana',
+        color : 'grey',
+        fontSize: '1.2rem',
+        margin: '0',
+    },
+    flexRow: {
+        display: "flex",
+        flexWrap: "wrap",
+        flexDirection: "row",
+        width: "100%"
+    },
+    link: {
+        textDecoration: "none",
+    },
+    contentBlock: {
+        extend: "flexRow",
+        justifyContent: "space-evenly",
+        margin: "2rem 0",
+    },
+    block: {
+        maxWidth: "max-content",
+        marginTop: "2rem",
+        padding: ".5rem 2rem",
+        borderLeft: ".5rem solid aqua",
+        boxShadow: "inset 0 0 7px #00ffff1c",
+        backgroundColor: "#000101a1",
+        width: "400px",
+        "& p": {
+            extend: "typography",
+            color: "white",
+            margin: "2rem 0 1rem 0"
+        },
+        "& h3": {
+            marginTop: "1rem"
+        },
+        "& a": {
+            extend: "link",
+            color: "#f50570"
+        }
+    },
+
     tmpPic : {
         width: "25%",
         height: "25%",
@@ -15,11 +57,26 @@ const useStyles = createUseStyles({
         backgroundColor: '#111111e0',
         margin: '.5rem 0'
     },
-    title: {
-        color: '#9c4545',
-        fontSize: '2.2rem',
-        textIndent: '5rem',
+
+    title : {
+        extend: 'typography',
+        fontSize: '1.8rem',
+        width: 'max-content',
+        padding: '.5rem 2rem',
+        margin: '1rem auto'
     },
+
+    subtitle : {
+        extend: 'typography',
+        fontSize: '1.5rem',
+        padding: '0',
+    },
+
+    // emphasis
+    over: {
+        color:"aqua"
+    },
+
     description: {
         display: 'flex',
         justifyContent: 'space-around',

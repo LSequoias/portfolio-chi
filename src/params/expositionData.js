@@ -2,108 +2,95 @@
 
 const expositionData = [
     {
-        title : "maison traditionnel japon",
-        url : "/media/images/japo.jpg",
+        title : "vague violette",
+        url : "/media/images/abstract.jpeg",
         hoverText : "Cliquez sur image",
-        textAlter : "maison traditionnel japon",
+        textAlter : "image abstraite violette",
         description : [
             {
-                subtitle: "exposition du japon",
-                paragraph: "blablabla.."
-            }
-        ],
-        tags : "Japon"
-    },
-    {
-        title : "japon du futur",
-        url : "/media/images/01.jpg",
-        hoverText : "Cliquez sur image",
-        textAlter : "japon du futur",
-        description : [
-            {
-                subtitle: "voici comment j'imagine le japon !",
+                subtitle: "vague violette",
                 paragraph: "blablabla.."
             }
         ],
         tags : "Abstrait"
     },
     {
-        title : "Tokyo de Freepik",
-        url : "/media/images/02.jpg",
+        title : "vide lumineux",
+        url : "/media/images/abstract2.jpg",
         hoverText : "Cliquez sur image",
-        textAlter : "Tokyo illustration, Japon",
+        textAlter : "image abstraite multicolore",
         description : [
             {
-                subtitle: "Tokyo de chez Freepik..",
-                paragraph: "blablabla Freepik pas bien.."
+                subtitle: "vide lumineux",
+                paragraph: "blablabla.."
             }
         ],
-        tags : "Japon"
+        tags : "Abstrait"
     },
     {
-        title : "Mont Fuji Hama",
-        url : "/media/images/03.jpg",
+        title : "chat gris",
+        url : "/media/images/catGray.jpg",
         hoverText : "Cliquez sur image",
-        textAlter : "Mont Fuji Hama, Japon",
+        textAlter : "chat gris",
         description : [
             {
-                subtitle: "Le Mont Fuji Hama !!",
-                paragraph: "blablabla japon.."
-            }
-        ],
-        tags : "Japon"
-    },
-    {
-        title : "Art moderne",
-        url : "/media/images/08.jpg",
-        hoverText : "Cliquez sur image",
-        textAlter : "art moderne",
-        description : [
-            {
-                subtitle: "exposition d'art moderne",
-                paragraph: "blablabla art moderne.."
-            }
-        ],
-        tags : "Art moderne"
-    },
-    {
-        title : "Bansky",
-        url : "/media/images/09.jpg",
-        hoverText : "Cliquez sur image",
-        textAlter : "",
-        description : [
-            {
-                subtitle: "exposition de Bansky",
-                paragraph: "blablabla Bansky Bristol.."
-            }
-        ],
-        tags : ""
-    },
-    {
-        title : "Chat dans le Cosmo",
-        url : "./media/images/cat.jpg",
-        hoverText : "Cliquez sur image",
-        textAlter : "Chat Cosmo",
-        description : [
-            {
-                subtitle: "un chat dans le cosmo",
-                paragraph: "lorem10.. ha bah non"
+                subtitle: "chat gris",
+                paragraph: "voici un chat gris"
             }
         ],
         tags : "Chat"
     },
     {
-        title : "",
-        url : "/media/images/cats.jpg",
-        hoverText : "",
-        textAlter : "",
+        title : "chat gris expressif",
+        url : "/media/images/catGray2.jpg",
+        hoverText : "Cliquez sur image",
+        textAlter : "chat gris expressif",
         description : [
             {
-                subtitle: "Bande de chat",
-                paragraph: "lorem0,5.. Non plus"
+                subtitle: "chat gris expressif",
+                paragraph: "blablabla chat gris.."
             }
         ],
         tags : "Chat"
+    },
+    {
+        title : "Japon",
+        url : "/media/images/japan.jpg",
+        hoverText : "Cliquez sur image",
+        textAlter : "Japon",
+        description : [
+            {
+                subtitle: "Japon",
+                paragraph: "Japon Japon Japon Japon"
+            }
+        ],
+        tags : "Japon"
+    },
+    {
+        title : "Japon du futur",
+        url : "/media/images/japanCyber.jpg",
+        hoverText : "Cliquez sur image",
+        textAlter : "japon du futur",
+        description : [
+            {
+                subtitle: "Japon du futur",
+                paragraph: "blablabla Japon du futurl.."
+            }
+        ],
+        tags : "Japon"
+    },
+    {
+        title : "Nature",
+        url : "/media/images/nature.jpg",
+        hoverText : "Cliquez sur l'image",
+        textAlter : "Nature",
+        description : [
+            {
+                subtitle: "Nature",
+                paragraph: "Nature.. Non plus"
+            }
+        ],
+        tags : "Nature"
     },
 ];
 

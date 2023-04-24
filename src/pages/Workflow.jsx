@@ -6,7 +6,9 @@ const Workflow = () => {
     const classes = useStyles();
     return (
         <Layouts>
-            <h2 className={classes.title}>Espace des compétances</h2>
+            <section className={classes.presentation}>
+                <h2 className={classes.title}>Espace des compétences</h2>
+            </section>
         </Layouts>
     )
 }
