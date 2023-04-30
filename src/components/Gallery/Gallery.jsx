@@ -14,81 +14,106 @@ const Gallery = ({data}) => {
     const getImg = (image) => {
         setModal(true);
         setModalData(image);
-        console.log(modalData, getModal);
+        //console.log(modalData, getModal);
+    }
+
+
+    const validation = {
+
+        correctif: {
+            0: function(property) {
+                property.title = property.url.lastIndexOf("/") + 1;
+                let filename = property.url.substr(property.title);
+                filename = filename.split(".")[0];
+                property.title = filename;
+            },
+            1: function(property) {
+                property.textAlter = property.title;
+            },
+            2: function(property) {
+                property.hoverText = `voir d'avantage: ${property.title}`;
+            },
+            3: function(property) {
+                property.url = "./media/images/noimage.png";
+            },
+            4: function(property) {                     
+                let numberOfChar = property.url.lastIndexOf("/") + 1;
+                let filename = property.url.substr(numberOfChar);
+                console.warn(`${filename.split(".")[1]} n'est pas une extension valide pour l'image ${filename}`);
+            },
+            5: function(property) {
+                property.description[0].subtitle = property.title;
+            },
+            6: function(property) {
+                property.description[0].paragraph = "La description viendra, soyez patient.";
+            }
+        }
     }
 
     
-
-/******************************************************** */
-    const messageLog = {
-        errorLog: {
-            0: "Aucun Document de trouvée, vérifier le contenue de la collection.",
-            1: function() {
-                console.log("Un Document n'as pas reçue de titre");
-            },
-            2: function(params) {
-                console.log(`${params.substr(15)} => Ce format est incorrecte pour une image.`)
-            }
-            },
-        correctif: {
-            0: function(params) {
-                // image de secours.
-                params.url = "./media/images/noimage.png";
-            },
-                // texte de secours.
-            1: function(params) {
-                params.hoverText = "Cliquez sur l'image";
-            },
-                // texte alternatif de l'image
-            2: function(params) {    
-                params.textAlter = params.title;
-            }
-        }
-    };
-                
     const generatePicture = () => {
 
         function* init() {
-            yield checkData(data);
+            yield checkCollection(data);
             yield checkInformation();
         }
 
         const seed = init();
 
-        // if false 
+        // if false ..iteration suivante
         if(!seed.next().done) {
             seed.next();
         }
 
-        function checkData(objectData) {
-            if(objectData.length === 0)
-                console.warn(messageLog.errorLog[0]);
+        /** 
+         * @param {Object} objectData Il s'agit d'un objet Js et non JSON.  
+         * @returns {(Object | null)} 
+         */
+        function checkCollection(objectData) {
+            try {
+                if(objectData.length === 0 || objectData === null || objectData === undefined) {
+                    throw new Error("Aucune collection trouvée pour la galerie.")
+                }
+
+                return objectData;
+                
+            } catch(error) {
+                
+                console.error(error.message);
+                return null;
+            }
         }
 
-        // tags est gérée par la sidebar
+
+        // <!> tags est gérée par la sidebar
         function checkInformation() {
-            console.log("passe")
             for (const element of data) {
 
-                if(!element.title.trim()) {
-                    // definir un titre par defaut en prenant en compte le nom de l'image
-                    // le corectif du texte alternatif se base sur le titre
-                    messageLog.errorLog[1]();
+                if(!element.title || element.title.trim().length < 1) {
+                    validation.correctif[0](element);
+                }
+
+                if(!element.textAlter || element.textAlter.trim().length === 0) {
+                    validation.correctif[1](element);
                 }
                 
+                if(!element.hoverText || element.hoverText.trim().length === 0) {
+                    validation.correctif[2](element);
+                }
+
                 if(!element.url.trim()) {
-                    messageLog.correctif[0](element);
+                    validation.correctif[3](element);
                 } else if(element.url.match(/\.(jpeg|jpg|gif|png)$/) === null) {
-                    messageLog.errorLog[2](element.url);
-                    messageLog.correctif[0](element);
+                    validation.correctif[4](element);
+                    validation.correctif[3](element);
                 }
 
-                if(!element.hoverText.trim()) {
-                    messageLog.correctif[1](element);
+                if(!element.description[0].subtitle || element.description[0].subtitle.trim(). length === 0) {
+                    validation.correctif[5](element);
                 }
 
-                if(!element.textAlter.trim()) {
-                    messageLog.correctif[2](element);
+                if(!element.description[0].paragraph || element.description[0].paragraph.trim(). length === 0) {
+                    validation.correctif[6](element);
                 }
             }
         }

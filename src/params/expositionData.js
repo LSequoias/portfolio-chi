@@ -2,20 +2,20 @@
 
 const expositionData = [
     {
-        title : "vague violette",
+        title : "",
         url : "/media/images/abstract.jpeg",
-        hoverText : "Cliquez sur image",
+        hoverText : " ",
         textAlter : "image abstraite violette",
         description : [
             {
-                subtitle: "vague violette",
-                paragraph: "blablabla.."
+                subtitle: "",
+                paragraph: " "
             }
         ],
         tags : "Abstrait"
     },
     {
-        title : "vide lumineux",
+        title : "image abstraite",
         url : "/media/images/abstract2.jpg",
         hoverText : "Cliquez sur image",
         textAlter : "image abstraite multicolore",

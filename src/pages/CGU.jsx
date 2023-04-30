@@ -4,7 +4,7 @@ import useStyles from "./style";
 // react icons
 import {BsTelephoneInbound} from "react-icons/bs";
 
-const CGU = () => {
+const Cgu = () => {
     const classes = useStyles();
     return (
         <Layouts>
@@ -46,4 +46,4 @@ const CGU = () => {
     )
 }
 
-export default CGU;
+export default Cgu;

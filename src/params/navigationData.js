@@ -8,6 +8,6 @@ export const listsOfHeader = [
 //export default lists;
 
 export const listsOfFooter = [
-    {alink: "/plan-du-site", tag: "Plan du site"},
-    {alink: "/conditions-general-utilisation", tag: "CGU"}
+    {alink:"/plan-du-site", tag: "Plan du site"},
+    {alink:"/cgu", tag: "CGU"}
 ];
