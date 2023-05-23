@@ -27,4 +27,6 @@ Creative Commons Attribution-NonCommercial (CC BY-NC).
     "react-jss": "^10.10.0",
     "vite": "^4.0.4"
 
+## projet
+**[Projet en cours](http://sequoias.alwaysdata.net/)**
 
