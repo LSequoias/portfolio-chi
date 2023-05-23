@@ -13,7 +13,7 @@ Ce projet est réaliser par mes soins, aucun fork n'est envisagée pour l'instan
 LSequoias
 
 ## Licences
-CC BY-NC.
+Creative Commons Attribution-NonCommercial (CC BY-NC).
 
 ## Dependances
     "framer-motion": "^8.5.5",
